@@ -32,7 +32,7 @@ var builder = new HostBuilder()
             cfg.AddBus(context => RabbitMassTransitConfiguration.ConfigureBus(context));
         });
 
-        services.AddHostedService<RabbitMqOperationsHostedService>();
+        services.AddHostedService<RabbitMqConsumerHostedService>();
     })
     .ConfigureLogging((hostingContext, logging) =>
     {

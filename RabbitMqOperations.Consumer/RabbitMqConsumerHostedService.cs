@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace RabbitMqOperations.Consumer
 {
-    public class RabbitMqOperationsHostedService : IHostedService
+    public class RabbitMqConsumerHostedService : IHostedService
     {
         #region Field(s)
         private readonly IBusControl _bus;
@@ -12,10 +12,10 @@ namespace RabbitMqOperations.Consumer
         #endregion
 
         #region Constructor(s)
-        public RabbitMqOperationsHostedService(IBusControl bus, ILoggerFactory loggerFactory)
+        public RabbitMqConsumerHostedService(IBusControl bus, ILoggerFactory loggerFactory)
         {
             _bus = bus;
-            _logger = loggerFactory.CreateLogger<RabbitMqOperationsHostedService>();
+            _logger = loggerFactory.CreateLogger<RabbitMqConsumerHostedService>();
         }
         #endregion
 

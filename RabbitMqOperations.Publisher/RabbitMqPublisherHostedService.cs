@@ -2,24 +2,19 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RabbitMqOperations.Common.Messages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RabbitMqOperations.Publisher
 {
-    public class MassTransitConsoleHostedService :
+    public class RabbitMqPublisherHostedService :
         IHostedService
     {
         readonly IBusControl _bus;
         readonly ILogger _logger;
 
-        public MassTransitConsoleHostedService(IBusControl bus, ILoggerFactory loggerFactory)
+        public RabbitMqPublisherHostedService(IBusControl bus, ILoggerFactory loggerFactory)
         {
             _bus = bus;
-            _logger = loggerFactory.CreateLogger<MassTransitConsoleHostedService>();
+            _logger = loggerFactory.CreateLogger<RabbitMqPublisherHostedService>();
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)

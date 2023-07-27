@@ -26,7 +26,7 @@ var builder = new HostBuilder()
                         cfg.AddBus(context => RabbitMassTransitConfiguration.ConfigureBus(context));
                     });
 
-                    services.AddHostedService<MassTransitConsoleHostedService>();
+                    services.AddHostedService<RabbitMqPublisherHostedService>();
                 })
                 .ConfigureLogging((hostingContext, logging) =>
                 {
