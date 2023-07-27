@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Consumer", "RabbitMqOperations.Consumer\RabbitMqOperations.Consumer.csproj", "{0227CAED-8B28-4ED1-BCAF-D6E0D4F93393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqOperations.Consumer", "RabbitMqOperations.Consumer\RabbitMqOperations.Consumer.csproj", "{0227CAED-8B28-4ED1-BCAF-D6E0D4F93393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Common", "RabbitMqOperations.Common\RabbitMqOperations.Common.csproj", "{92893A96-177E-42D7-8557-32BE9CE93EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqOperations.Common", "RabbitMqOperations.Common\RabbitMqOperations.Common.csproj", "{92893A96-177E-42D7-8557-32BE9CE93EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Core", "RabbitMqOperations.Core\RabbitMqOperations.Core.csproj", "{A4D195CF-911A-4C9A-94CF-D31B528877F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqOperations.Core", "RabbitMqOperations.Core\RabbitMqOperations.Core.csproj", "{A4D195CF-911A-4C9A-94CF-D31B528877F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Domain", "RabbitMqOperations.Domain\RabbitMqOperations.Domain.csproj", "{C8FAD641-E261-4B50-9D12-E4236E1E28B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqOperations.Domain", "RabbitMqOperations.Domain\RabbitMqOperations.Domain.csproj", "{C8FAD641-E261-4B50-9D12-E4236E1E28B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Test", "RabbitMqOperations.Test\RabbitMqOperations.Test.csproj", "{6B44A0AA-4C22-4073-97AF-B81E99817850}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqOperations.Test", "RabbitMqOperations.Test\RabbitMqOperations.Test.csproj", "{6B44A0AA-4C22-4073-97AF-B81E99817850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqOperations.Publisher", "RabbitMqOperations.Publisher\RabbitMqOperations.Publisher.csproj", "{493AD747-E426-46DA-BB1B-A1358C20CFB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6B44A0AA-4C22-4073-97AF-B81E99817850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B44A0AA-4C22-4073-97AF-B81E99817850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B44A0AA-4C22-4073-97AF-B81E99817850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493AD747-E426-46DA-BB1B-A1358C20CFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493AD747-E426-46DA-BB1B-A1358C20CFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493AD747-E426-46DA-BB1B-A1358C20CFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493AD747-E426-46DA-BB1B-A1358C20CFB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
